@@ -1,0 +1,22 @@
+|--- petal length (cm) <= 2.45
+|   |--- weights: [40.00, 0.00, 0.00] class: setosa
+|--- petal length (cm) >  2.45
+|   |--- petal width (cm) <= 1.65
+|   |   |--- petal length (cm) <= 4.95
+|   |   |   |--- weights: [0.00, 38.00, 0.00] class: versicolor
+|   |   |--- petal length (cm) >  4.95
+|   |   |   |--- sepal length (cm) <= 6.15
+|   |   |   |   |--- sepal width (cm) <= 2.45
+|   |   |   |   |   |--- weights: [0.00, 0.00, 1.00] class: virginica
+|   |   |   |   |--- sepal width (cm) >  2.45
+|   |   |   |   |   |--- weights: [0.00, 1.00, 0.00] class: versicolor
+|   |   |   |--- sepal length (cm) >  6.15
+|   |   |   |   |--- weights: [0.00, 0.00, 2.00] class: virginica
+|   |--- petal width (cm) >  1.65
+|   |   |--- petal length (cm) <= 4.85
+|   |   |   |--- sepal width (cm) <= 3.00
+|   |   |   |   |--- weights: [0.00, 0.00, 2.00] class: virginica
+|   |   |   |--- sepal width (cm) >  3.00
+|   |   |   |   |--- weights: [0.00, 1.00, 0.00] class: versicolor
+|   |   |--- petal length (cm) >  4.85
+|   |   |   |--- weights: [0.00, 0.00, 35.00] class: virginica
